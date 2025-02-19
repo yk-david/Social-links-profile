@@ -1,2 +1,117 @@
-main {
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.device {
+  background: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #1F1F1F;
+  width: min(327px, 90%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 579px;
+  border-radius: 12px;
+}
+
+a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+a.button:hover, 
+a.button:focus {
+  color: #111;
+  background: #C4F82A;
+  transition: 1s;
+}
+
+a.button:active {
+  opacity: 0.5;
+}
+
+/* profil section */
+.profil-section, 
+.name-section, 
+.career-section {
+  margin: 0 auto;
+}
+
+.profil-section {
+  width: 88px;
+  height: 88px;
+}
+
+.profil-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* name section */
+.name-section {
+  text-align: center;
+}
+
+.name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 36px;
+  letter-spacing: 0.4px;
+}
+
+.location {
+  color: #C4F82A;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 21px;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: 0.2px;
+}
+
+/* career section */
+.career-summary {
+  font-size: 0.875rem;
+}
+
+/* link section */
+.link-section {
+  height: 289px;
+  width: 279px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  width: 100%;
 }
