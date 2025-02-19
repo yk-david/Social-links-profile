@@ -9,7 +9,7 @@ export default function App() {
     <div className="device">
       <main className="app">
         <section className="profil-section">
-          <img className="profil-img" src={avatar} />
+          <img className="profil-img" src={avatar} alt='avatar image' />
         </section>
         
         <section className="name-section">
