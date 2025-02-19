@@ -8,24 +8,24 @@ export default function App() {
   return (
     <div className="device">
       <main className="app">
-        <section className="profil-section">
+        <div className="profil-div">
           <img className="profil-img" src={avatar} alt='avatar image' />
-        </section>
+        </div>
         
-        <section className="name-section">
+        <div className="name-section">
           <h1 className="name">Jessica Randall</h1>
           <p className="location">London, United Kingdom</p>
-        </section>
+        </div>
         
-        <section className='career-section'>
+        <div className='career-section'>
           <p className='career-summary'>"Front-end developper and avid reader."</p>
-        </section>
+        </div>
         
-        <section className="link-section">
+        <div className="link-section">
           {data.map((list) => {
             return <Link {...list} />;
           })}
-        </section>
+        </div>
       </main>
     </div>
   );
