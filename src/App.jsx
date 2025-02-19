@@ -11,13 +11,16 @@ export default function App() {
         <section className="profil-section">
           <img className="profil-img" src={avatar} />
         </section>
+        
         <section className="name-section">
           <h1 className="name">Jessica Randall</h1>
           <p className="location">London, United Kingdom</p>
         </section>
+        
         <section className='career-section'>
           <p className='career-summary'>"Front-end developper and avid reader."</p>
         </section>
+        
         <section className="link-section">
           {data.map((list) => {
             return <Link {...list} />;
